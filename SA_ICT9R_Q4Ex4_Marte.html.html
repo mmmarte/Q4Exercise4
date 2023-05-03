@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<title>
+	  length
+	</title>
+	<style>
+	  td {padding: 25px}
+	  input {width: 100%}
+	</style>
+  </head>
+  <body>
+    <table class="table table-primary" border="1">
+	    <thead>
+	      <th colspan="3">length</th>
+      </thead>
+      <tbody>
+        <tr>
+	        <td>
+            km to m:
+            <br><br>
+	        	<input type="number" name="number1" id="number1">
+	        </td>
+	        <td>
+	      	  km to cm:
+	      	  <br><br>
+	      	  <input type="number" name="number2" id="number2">
+	        </td>
+	        <td>
+	      	  km to mm:
+	      	  <br><br>
+	      	  <input type="number" name="number3" id="number3">
+	        </td>
+	      </tr>
+  	    <tr>
+  	      <td>
+  	      	m to km:
+  	      	<br><br>
+  	      	<input type="number" name="number4" id="number4">
+  	      </td>
+  	      <td>
+  	      	m to cm:
+  	      	<br><br>
+  	      	<input type="number" name="number5" id="number5">
+  	      </td>
+  	      <td>
+  	      	m to mm:
+  	      	<br><br>
+  	      	<input type="number" name="number6" id="number6">
+  	      </td>
+  	    </tr>
+  	    <tr>
+  	      <td>
+	        	cm to km:
+	        	<br><br>
+	        	<input type="number" name="number7" id="number7">
+	        </td>
+	        <td>
+	        	cm to m:
+	      	  <br><br>
+	        	<input type="number" name="number8" id="number8">
+	        </td>
+	        <td>
+	        	cm to mm:
+	       	  <br><br>
+	      	  <input type="number" name="number9" id="number9">
+	        </td>
+	      </tr>
+ 	      <tr>
+	        <td>
+	      	  mm to km:
+	      	  <br><br>
+	      	  <input type="number" name="number10" id="number10">
+	        </td>
+	        <td>
+	      	  mm to m:
+	      	  <br><br>
+	      	  <input type="number" name="number11" id="number11">
+	        </td>
+	        <td>
+	      	  mm to cm:
+	      	  <br><br>
+	      	  <input type="number" name="number12" id="number12">
+	        </td>
+	      </tr>
+	      <tr>
+	        <td colspan="3">
+	      	  <button type="submit" class="btn btn-primary btn-block" onclick="Compute()">Compute</button>
+	        </td>	
+	      </tr>
+	    </tbody>
+	  </table>
+	  <hr>
+	  <table class="table table-info" border="1">
+	    <thead>
+	      <th colspan="3">time</th>
+      </thead>
+      <tbody>
+        <tr>
+	        <td>
+            d to hr:
+            <br><br>
+	      	  <input type="number" name="number13" id="number13">
+  	      </td>
+	        <td>
+	        	d to m:
+	        	<br><br>
+	        	<input type="number" name="number14" id="number14">
+  	      </td>
+	        <td>
+	        	d to s:
+	        	<br><br>
+	        	<input type="number" name="number15" id="number15">
+  	      </td>
+	      </tr>
+	      <tr>
+	        <td>
+	        	hr to d:
+	      	  <br><br>
+  	      	<input type="number" name="number16" id="number16">
+	        </td>
+	        <td>
+	        	hr to m:
+	        	<br><br>
+	      	  <input type="number" name="number17" id="number17">
+  	      </td>
+	        <td>
+	        	hr to s:
+	        	<br><br>
+	        	<input type="number" name="number18" id="number18">
+  	      </td>
+	      </tr>
+	      <tr>
+	        <td>
+	        	m to d:
+	      	  <br><br>
+  	      	<input type="number" name="number19" id="number19">
+	        </td>
+	        <td>
+	        	m to hr:
+	        	<br><br>
+	      	  <input type="number" name="number20" id="number20">
+  	      </td>
+	        <td>
+	        	m to s:
+	        	<br><br>
+	        	<input type="number" name="number21" id="number21">
+  	      </td>
+	      </tr>
+ 	      <tr>
+	        <td>
+	        	s to d:
+	      	  <br><br>
+  	      	<input type="number" name="number22" id="number22">
+	        </td>
+	        <td>
+	        	s to hr:
+	        	<br><br>
+  	      	<input type="number" name="number23" id="number23">
+	        </td>
+	        <td>
+	        	s to m:
+	        	<br><br>
+	      	  <input type="number" name="number24" id="number24">
+  	      </td>
+	      </tr>
+	      <tr>
+	        <td colspan="3">
+	        	<button type="submit" class="btn btn-info btn-block" onclick="Compute()">Compute</button>
+  	      </td>	
+	      </tr>
+	    </tbody>
+	  </table>
+	  <hr>
+	  <table class="table table-success" border="1">
+	    <thead>
+	      <th colspan="2">temperature</th>
+      </thead>
+      <tbody>
+  	      <td>
+  	      	C to F:
+  	      	<br><br>
+  	      	<input type="number" name="number25" id="number25">
+  	      </td>
+  	      <td>
+  	      	C to K:
+  	      	<br><br>
+  	      	<input type="number" name="number26" id="number26">
+  	      </td>
+  	    </tr>
+  	    <tr>
+  	      <td>
+	        	F to C:
+	        	<br><br>
+	        	<input type="number" name="number27" id="number27">
+	        </td>
+	        <td>
+	        	F to K:
+	      	  <br><br>
+	        	<input type="number" name="number28" id="number28">
+	        </td>
+	      </tr>
+ 	      <tr>
+ 	      	<td>
+	        	K to C:
+	       	  <br><br>
+	      	  <input type="number" name="number29" id="number29">
+	        </td>
+	        <td>
+	      	  K to F:
+	      	  <br><br>
+	      	  <input type="number" name="number30" id="number30">
+	        </td>
+	      <tr>
+	        <td colspan="2">
+	      	  <button type="submit" class="btn btn-success btn-block" onclick="Compute()">Compute</button>
+	        </td>	
+	      </tr>
+	    </tbody>
+	  </table>
+	  <hr>
+	  <table class="table table-warning" border="1">
+	    <thead>
+	      <th colspan="3">mass</th>
+      </thead>
+      <tbody>
+        <tr>
+	        <td>
+            kg to g:
+            <br><br>
+	        	<input type="number" name="number31" id="number31">
+	        </td>
+	        <td>
+	      	  kg to cg:
+	      	  <br><br>
+	      	  <input type="number" name="number32" id="number32">
+	        </td>
+	        <td>
+	      	  kg to mg:
+	      	  <br><br>
+	      	  <input type="number" name="number33" id="number33">
+	        </td>
+	      </tr>
+  	    <tr>
+  	      <td>
+  	      	g to kg:
+  	      	<br><br>
+  	      	<input type="number" name="number34" id="number34">
+  	      </td>
+  	      <td>
+  	      	g to cg:
+  	      	<br><br>
+  	      	<input type="number" name="number35" id="number35">
+  	      </td>
+  	      <td>
+  	      	g to mg:
+  	      	<br><br>
+  	      	<input type="number" name="number36" id="number36">
+  	      </td>
+  	    </tr>
+  	    <tr>
+  	      <td>
+	        	cg to kg:
+	        	<br><br>
+	        	<input type="number" name="number37" id="number37">
+	        </td>
+	        <td>
+	        	cg to g:
+	      	  <br><br>
+	        	<input type="number" name="number38" id="number38">
+	        </td>
+	        <td>
+	        	cg to mg:
+	       	  <br><br>
+	      	  <input type="number" name="number39" id="number39">
+	        </td>
+	      </tr>
+ 	      <tr>
+	        <td>
+	      	  mg to kg:
+	      	  <br><br>
+	      	  <input type="number" name="number40" id="number40">
+	        </td>
+	        <td>
+	      	  mg to g:
+	      	  <br><br>
+	      	  <input type="number" name="number41" id="number41">
+	        </td>
+	        <td>
+	      	  mg to cg:
+	      	  <br><br>
+	      	  <input type="number" name="number42" id="number42">
+	        </td>
+	      </tr>
+	      <tr>
+	        <td colspan="3">
+	      	  <button type="submit" class="btn btn-warning btn-block" onclick="Compute()">Compute</button>
+	        </td>	
+	      </tr>
+	    </tbody>
+	  </table>
+
+<script>
+
+function Compute() {
+	var number1 = document.getElementById("number1").value;
+	var number2 = document.getElementById("number2").value;
+	var number3 = document.getElementById("number3").value;
+	var number4 = document.getElementById("number4").value;
+	var number5 = document.getElementById("number5").value;
+	var number6 = document.getElementById("number6").value;
+	var number7 = document.getElementById("number7").value;
+	var number8 = document.getElementById("number8").value;
+	var number9 = document.getElementById("number9").value;
+	var number10 = document.getElementById("number10").value;
+	var number11 = document.getElementById("number11").value;
+	var number12 = document.getElementById("number12").value;
+
+	var number13 = document.getElementById("number13").value;
+	var number14 = document.getElementById("number14").value;
+	var number15 = document.getElementById("number15").value;
+	var number16 = document.getElementById("number16").value;
+	var number17 = document.getElementById("number17").value;
+	var number18 = document.getElementById("number18").value;
+	var number19 = document.getElementById("number19").value;
+	var number20 = document.getElementById("number20").value;
+	var number21 = document.getElementById("number21").value;
+	var number22 = document.getElementById("number22").value;
+	var number23 = document.getElementById("number23").value;
+	var number24 = document.getElementById("number24").value;
+
+	var number25 = document.getElementById("number25").value;
+	var number26 = document.getElementById("number26").value;
+	var number27 = document.getElementById("number27").value;
+	var number28 = document.getElementById("number28").value;
+	var number29 = document.getElementById("number29").value;
+	var number30 = document.getElementById("number30").value;
+
+	var number31 = document.getElementById("number31").value;
+	var number32 = document.getElementById("number32").value;
+	var number33 = document.getElementById("number33").value;
+	var number34 = document.getElementById("number34").value;
+	var number35 = document.getElementById("number35").value;
+	var number36 = document.getElementById("number36").value;
+	var number37 = document.getElementById("number37").value;
+	var number38 = document.getElementById("number38").value;
+	var number39 = document.getElementById("number39").value;
+	var number40 = document.getElementById("number40").value;
+	var number41 = document.getElementById("number41").value;
+	var number42 = document.getElementById("number42").value;
+
+	var kmtom = Number(number1) * 1000;
+  var kmtocm = Number(number2) * 100000;
+  var kmtomm = Number(number3) * 1000000;
+	var mtokm = Number(number4) * 0.001;
+  var mtocm = Number(number5) * 100;
+  var mtomm = Number(number6) * 1000;
+	var cmtokm = Number(number7) * 0.00001;
+  var cmtom = Number(number8) * 0.01;
+  var cmtomm = Number(number9) * 10;
+	var mmtokm = Number(number10) * 0.000001;
+  var mmtom = Number(number11) * 0.001;
+  var mmtocm = Number(number12) * 0.1;
+
+  var dtohr = Number(number13) * 24;
+  var dtom = Number(number14) * 1440;
+  var dtos = Number(number15) * 83400;
+	var hrtod = Number(number16) * 0.04167;
+  var hrtom = Number(number17) * 60;
+  var hrtos = Number(number18) * 3600;
+	var mtod = Number(number19) * 0.000694;
+  var mtohr = Number(number20) * 0.0167;
+  var mtos = Number(number21) * 60;
+	var stod = Number(number22) * 0.0000115741;
+  var stohr = Number(number23) * 0.000278;
+  var stom = Number(number24) * 0.0167;
+
+  var ctof = Number(number25) * 33.8;
+  var ctok = Number(number26) * 274.15;
+	var ftoc = Number(number27) * -17.2;
+  var ftok = Number(number28) * 255.9278;
+  var ktoc = Number(number29) * -272.15;
+	var ktof = Number(number30) * -457.87;
+
+	var kgtog = Number(number31) * 1000;
+  var kgtocg = Number(number32) * 100000;
+  var kgtomg = Number(number33) * 1000000;
+	var gtokg = Number(number34) * 0.001;
+  var gtocg = Number(number35) * 100;
+  var gtomg = Number(number36) * 1000;
+	var cgtokg = Number(number37) * 0.00001;
+  var cgtog = Number(number38) * 0.01;
+  var cgtomg = Number(number39) * 10;
+	var mgtokg = Number(number40) * 0.000001;
+  var mgtog = Number(number41) * 0.001;
+  var mgtocg = Number(number42) * 0.1;
+
+	alert(
+		number1 + "km is equal to " + kmtom + "m." + "\n" + 
+		number2 + "km is equal to " + kmtocm + "cm." + "\n" + 
+		number3 + "km is equal to " + kmtomm + "mm." + "\n" + 
+		number4 + "m is equal to " + mtokm + "km." + "\n" + 
+		number5 + "m is equal to " + mtocm + "cm." + "\n" + 
+		number6 + "m is equal to " + mtomm + "mm." + "\n" + 
+		number7 + "cm is equal to " + cmtokm + "km." + "\n" + 
+		number8 + "cm is equal to " + cmtom + "m." + "\n" + 
+		number9 + "cm is equal to " + cmtomm + "mm." + "\n" + 
+		number10 + "mm is equal to " + mmtokm + "km." + "\n" + 
+		number11 + "mm is equal to " + mmtom + "m." + "\n" + 
+		number12 + "mm is equal to " + mmtocm + "cm." + "\n" + 
+
+		number13 + "d is equal to " + dtohr + "hr." + "\n" + 
+		number14 + "d is equal to " + dtom + "m." + "\n" + 
+		number15 + "d is equal to " + dtos + "s." + "\n" + 
+		number16 + "hr is equal to " + hrtod + "d." + "\n" + 
+		number17 + "hr is equal to " + hrtom + "m." + "\n" + 
+		number18 + "hr is equal to " + hrtos + "s." + "\n" + 
+		number19 + "m is equal to " + mtod + "d." + "\n" + 
+		number20 + "m is equal to " + mtohr + "hr." + "\n" + 
+		number21 + "m is equal to " + mtos + "s." + "\n" + 
+		number22 + "s is equal to " + stod + "d." + "\n" + 
+		number23 + "s is equal to " + stohr + "hr." + "\n" + 
+		number24 + "s is equal to " + stom + "m." + "\n" + 
+
+		number25 + "C is equal to " + ctof + "F." + "\n" + 
+		number26 + "C is equal to " + ctok + "K." + "\n" + 
+		number27 + "F is equal to " + ftoc + "C." + "\n" + 
+		number28 + "F is equal to " + ftok + "K." + "\n" + 
+		number29 + "K is equal to " + ktoc + "C." + "\n" + 
+		number30 + "K is equal to " + ktof + "F." + "\n" + 
+
+		number31 + "kg is equal to " + kgtog + "g." + "\n" + 
+		number32 + "kg is equal to " + kgtocg + "cg." + "\n" + 
+		number33 + "kg is equal to " + kgtomg + "mg." + "\n" + 
+		number34 + "g is equal to " + gtokg + "kg." + "\n" + 
+		number35 + "g is equal to " + gtocg + "cg." + "\n" + 
+		number36 + "g is equal to " + gtomg + "mg." + "\n" + 
+		number37 + "cg is equal to " + cgtokg + "kg." + "\n" + 
+		number38 + "cg is equal to " + cgtog + "g." + "\n" + 
+		number39 + "cg is equal to " + cgtomg + "mg." + "\n" + 
+		number40 + "mg is equal to " + mgtokg + "kg." + "\n" + 
+		number41 + "mg is equal to " + mgtog + "g." + "\n" + 
+		number42 + "mg is equal to " + mgtocg + "cg.g"
+	);}
+
+</script>
+
+<!--
+	Time and temperature is mess up.
+  hehehe idk how to convert (seriously ma'am i fail conversion every time)
+-->
+
+</body>
+</html>
